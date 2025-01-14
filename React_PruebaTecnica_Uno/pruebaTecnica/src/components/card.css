@@ -1,0 +1,27 @@
+.cardMovie{
+    background-color: #1f1e1f;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titleCardMovie{
+    color: black;
+    width: 200px;
+}
+@media(max-width: 768px){
+    .cardMovie {
+        width: 150px;
+        height: 250px;
+    }
+    .placeholder {
+        width: 150px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}

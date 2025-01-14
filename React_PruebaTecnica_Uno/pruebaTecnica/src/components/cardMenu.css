@@ -1,0 +1,53 @@
+.card {
+    background-color: #1f1e1f;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+.titleCard {
+    text-decoration: none;
+    color: black;
+}
+
+.pImg{
+    color: white;
+    position: relative;
+    top: -50%;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.placeholderCardMenu {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        background-color: #1f1e1f;
+        width: 150px;
+        height: 250px;
+        border-radius: 10px;
+        
+    }
+    .placeholderCardMenu {
+        width: 150px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .pImg{
+        color: white;
+        position: relative;
+        top: -50%;
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+}
