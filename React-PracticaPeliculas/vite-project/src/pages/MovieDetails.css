@@ -1,0 +1,25 @@
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  /*  separar en lines diferentes cuando no cabe*/
+  flex-wrap: wrap;
+}
+.col{
+    /* ancho de las columnas en, y gracias a grap el contenido se desplaza cuando disminuye el ancho de la pantalla */
+    max-width: 400px;
+    margin: 15px;
+    height: auto;
+    /* ocupa el 80% dentro de los 400 px por columnna */
+    width: 80%;
+}
+.movieImage{
+    border-radius: 15px;
+    object-fit: cover;
+}
+.title{
+  margin-top: 0;  
+}
+.movieDetails{
+    font-size: 1.5rem;
+
+}

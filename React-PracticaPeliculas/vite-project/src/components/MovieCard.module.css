@@ -1,0 +1,35 @@
+.movieCard {
+  /* quitar estilo de lista */
+  list-style: none;
+  /* tamaño de letra */
+  font-size: 1.5rem;
+  /* alinear texto */
+  text-align: center;
+
+  /* transicicion cuando regresa a su posicion original */
+  transition: 0.5s;
+}
+
+.movieCard:hover {
+  opacity: 0.5;
+  /* alza la imagen(si es positivo la baja) */
+  transform: translateY(-30px);
+  /* animacion cuando se activa el hover */
+  transition: 0.5s;
+}
+
+.movieImage {
+  /* redondear las esquinas */
+  border-radius: 20px;
+}
+.title{
+  color: white;
+}
+
+@media (max-width: 560px) {
+  .movieImage {
+    width: 90%;
+    height: auto;
+  }
+    
+}
