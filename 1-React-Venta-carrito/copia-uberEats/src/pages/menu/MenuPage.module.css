@@ -1,0 +1,12 @@
+.containerMenu{
+    height: 100vh;
+  
+}
+
+.companiesSection{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    justify-content: center;
+}

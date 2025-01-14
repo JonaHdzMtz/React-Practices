@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 60px;
+    box-shadow: 0px 1px 4px 0px rgba(59, 57, 57, 0.75);
+}
+
+.barOptions {
+    height: 30px;
+    background-color: aqua;
+}
+.icon {
+  height: 20px;
+  width: 20px;
+   cursor: pointer;
+}
+
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal {
+    position: 'absolute';
+        top: '50%';
+        left: '50%';
+        transform: 'translate(-50%, -50%)';
+        width: 400;
+        height: 80%;
+        width: 80%;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+}
+
+.imgModal{
+    width: 50%;
+    
+    object-fit: cover;
+    border-radius: 10px;
+}
+.p{
+    font-size: 20px;
+    margin: 10px;
+}
+.productsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}

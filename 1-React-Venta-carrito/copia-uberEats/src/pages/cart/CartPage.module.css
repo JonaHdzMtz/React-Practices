@@ -1,0 +1,103 @@
+.title {
+    font-size: 20px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 60px;
+    box-shadow: 0px 1px 4px 0px rgba(59, 57, 57, 0.75);
+}
+
+.containerButtons {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.containerCart {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.table {
+    border-collapse: collapse;
+    box-shadow: 0px 1px 4px 0px rgba(59, 57, 57, 0.75);
+    border-radius: 10px;
+    width: 40%;
+}
+
+.table td {
+
+    padding: 2px;
+    text-align: center;
+
+}
+
+.imgTable {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.tr th {}
+
+.summaryCard {
+    box-shadow: 0px 1px 4px 0px rgba(59, 57, 57, 0.75);
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.summaryCard p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.summaryCard h2 {
+    text-align: center;
+}
+
+.containerSummary {
+    width: 30%;
+    text-align: center;
+    height: 400px; 
+    
+}
+
+.containerSummary button {
+    background-color: rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
+    box-shadow: 0px 1px 4px 0px rgba(59, 57, 57, 0.75);
+    border-radius: 16px;
+    height: 35px;
+    padding: 0px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+.containerSummary button:hover {
+    background-color: #f1f1f1;
+    color: black;
+    scale: 1.1;
+}
