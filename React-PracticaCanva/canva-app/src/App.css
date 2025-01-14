@@ -1,0 +1,16 @@
+/* importat letra ppoppinssans de la carpeta fonts */
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap';
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:  'Poppins', sans-serif;
+}
+
+
+body{
+  background-color: black;
+    color: #E4E4E4;
+    line-height: 1.5;
+    height: 100vh;
+}
