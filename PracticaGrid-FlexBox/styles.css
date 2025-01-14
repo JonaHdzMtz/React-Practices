@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem ;
+    min-height: 100vh;
+    padding: 20px;
+}
+/* comentario :  
+    - Seleccionamos todos los elementos hijos de la clase grid-container y les damos una sombra, un radio de borde de 10px, un relleno de 50px, un texto centrado y un peso de fuente de 500
+*/
+.grid-container > * {
+    box-shadow: 10px 6px 37px -13px rgba(51,51,51,0.74);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+.grid-container{
+    display: grid;
+    gap : 20px;
+    grid-template: 
+    "header" 100px
+    "navbar" 50px
+    "main" 100px
+    "sidebar"
+    "footer";
+
+    .header{
+        grid-area : header;
+        background-color: rgb(103, 93, 241, 0.74);
+    };
+    .navbar{
+        grid-area : navbar;
+        background-color: rgb(179, 49, 241, 0.74);
+    };
+    .sidebar{
+        grid-area : sidebar;
+        background-color: rgb(77, 237, 106, 0.74);
+    };
+    .main{
+        grid-area : main;
+        background-color: #f5f5f5;
+    };
+    .footer{
+        grid-area : footer;
+        background-color: rgb(237, 123, 67, 0.74);  
+    }
+    /* explicaicon detallada de la linea de abajo:
+    
+    - Si el ancho de la pantalla es mayor o igual a 768px, entonces el grid-template se convierte en un grid de 4 columnas y 4 filas, con las siguientes dimensiones:
+        - La primera fila tiene una altura de 200px
+        - La segunda fila tiene una altura de 50px
+        - La tercera fila tiene una altura de 100px
+        - La cuarta fila tiene una altura de 100px
+        - La primera columna tiene un ancho de 200px
+        - La segunda columna tiene un ancho de 200px
+        - La tercera columna tiene un ancho de 200px
+        - La cuarta columna tiene un ancho de 200px
+
+    */
+    @media (min-width:768px){
+        grid-template: 
+        "header navbar" 50px
+        "header navbar" 50px
+        "sidebar main" auto
+        "footer footer" 100px/
+        200px auto
+        
+    }
+    @media (min-width:992px){
+        grid-template: 
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer" 100px/
+        200px auto 200px
+        
+    }
+}
