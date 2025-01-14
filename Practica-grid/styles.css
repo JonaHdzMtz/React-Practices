@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.he {
+  grid-area: he;
+  background-color: blue;
+  border-radius: 10px;
+}
+.op {
+  grid-area: op;
+  background-color: red;
+  border-radius: 10px;
+}
+.ti {
+  grid-area: ti;
+  background-color: green;
+  border-radius: 10px;
+}
+.tab {
+  grid-area: tab;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.grid-container {
+  min-height: 100vh;
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "he"
+    "op"
+    "ti"
+    "tab";
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template:
+      "he he" 100px
+      "op ti" 100px
+      "tab tab" 100px /
+      auto auto;
+  }
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template:
+      "he ti" 100px
+      "op op" 100px
+      "tab ." 100px /
+      auto 200px;
+  }
+}
+@media(min-width : 1024px){
+    .grid-container{
+        grid-template:
+        "ti tab op" 100px
+        "he he he" 200px /
+        100px auto 100px
+        ;
+    }
+}
